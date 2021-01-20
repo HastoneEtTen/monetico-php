@@ -16,7 +16,11 @@
         {
             "name": "Martin Potel",
             "email": "martin@dansmaculotte.fr"
-        }
+        },
+        {
+            "name": "Hastone et Ten",
+            "email": "web@hastone-et-ten.fr"
+        },
     ],
     "autoload": {
         "psr-4": {
