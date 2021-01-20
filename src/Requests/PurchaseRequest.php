@@ -349,11 +349,15 @@ class PurchaseRequest extends AbstractRequest
      */
     public function fieldsToArray(string $eptCode, string $companyCode, string $version): array
     {
-        return array_merge(
-            $this->baseFields($eptCode, $companyCode, $version),
-            $this->optionsFields(),
-            $this->commitmentsFields(),
-            $this->urlFields()
-        );
+      $fiels = array_merge(
+          $this->baseFields($eptCode, $companyCode, $version),
+          $this->optionsFields(),
+          $this->commitmentsFields(),
+          $this->urlFields()
+      );
+
+      return array_filter($fiels, function ($item) {
+          return !empty($item);
+      });
     }
 }
