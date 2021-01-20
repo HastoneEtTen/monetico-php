@@ -1,5 +1,5 @@
 {
-    "name": "dansmaculotte/monetico-php",
+    "name": "hastoneetten/monetico-php",
     "description": "PHP SDK for Monetico Payment Service",
     "version": "2.0.0",
     "type": "library",
